@@ -1,0 +1,673 @@
+UseCaseModel Lab1 {
+
+	UC::searchGoods include login definedBySSD(SearchGoodsSSD) relatedService(SearchGoodsService)
+	UC::manageCart include login definedBySSD(ManageCartSSD) relatedService(ManageCartService)
+	UC::orderPayment include login definedBySSD(OrderPaymentSSD) relatedService(OrderPaymentService)
+	UC::applyRefund include login definedBySSD(ApplyRefundSSD) relatedService(ApplyRefundService)
+	UC::login
+	UC::manageUser include login definedBySSD(ManageUserSSD) relatedService(ManageUserService)
+	UC::register extend manageUser
+	UC::manageCommodity include login definedBySSD(ManageCommoditySSD) relatedService(ManageCommodityService)
+	UC::manageRefund include login definedBySSD(ManageRefundSSD) relatedService(ManageRefundService)
+	UC::mabageOrders include login definedBySSD(MabageOrdersSSD) relatedService(MabageOrdersService)
+
+	Actor Customer {
+		searchGoods
+		manageCart
+		orderPayment
+		applyRefund
+	}
+
+	Actor Admin {
+		manageRefund
+		mabageOrders
+		manageCommodity
+	}
+
+	Actor Super_admin {
+		manageUser
+	}
+
+	Interaction SearchGoodsSSD {
+
+		[Participants: Customer SearchGoodsService]
+
+		CallMessage::SearchGoodsSSDCallMessage1(browseGoods SearchGoodsSSDCallMessage1SendingEnd -> SearchGoodsSSDExecution1StartEnd)
+		ReturnMessage::SearchGoodsSSDCallMessage1Return(SearchGoodsSSDExecution1FinishEnd -> SearchGoodsSSDCallMessage1ReturnReceivingEnd SearchGoodsSSDCallMessage1)
+
+		Execution::SearchGoodsSSDExecution1(SearchGoodsService SearchGoodsSSDExecution1StartEnd SearchGoodsSSDExecution1FinishEnd)
+
+		MessageEnd::SearchGoodsSSDCallMessage1SendingEnd(Customer SearchGoodsSSDCallMessage1)
+		ExecutionEnd::SearchGoodsSSDExecution1StartEnd(SearchGoodsService SearchGoodsSSDExecution1)
+		ExecutionEnd::SearchGoodsSSDExecution1FinishEnd(SearchGoodsService SearchGoodsSSDExecution1)
+		MessageEnd::SearchGoodsSSDCallMessage1ReturnReceivingEnd(Customer SearchGoodsSSDCallMessage1Return)
+
+	}
+
+	Interaction ManageCartSSD {
+
+		[Participants: Customer ManageCartService]
+
+		CallMessage::ManageCartSSDCallMessage1(addCart ManageCartSSDCallMessage1SendingEnd -> ManageCartSSDExecution1StartEnd)
+		ReturnMessage::ManageCartSSDCallMessage1Return(ManageCartSSDExecution1FinishEnd -> ManageCartSSDCallMessage1ReturnReceivingEnd ManageCartSSDCallMessage1)
+		CallMessage::ManageCartSSDCallMessage3(browseCart ManageCartSSDCallMessage3SendingEnd -> ManageCartSSDExecution2StartEnd)
+		ReturnMessage::ManageCartSSDCallMessage3Return(ManageCartSSDExecution2FinishEnd -> ManageCartSSDCallMessage3ReturnReceivingEnd ManageCartSSDCallMessage3)
+		CallMessage::ManageCartSSDCallMessage5(deleteCart ManageCartSSDCallMessage5SendingEnd -> ManageCartSSDExecution3StartEnd)
+		ReturnMessage::ManageCartSSDCallMessage5Return(ManageCartSSDExecution3FinishEnd -> ManageCartSSDCallMessage5ReturnReceivingEnd ManageCartSSDCallMessage5)
+
+		Execution::ManageCartSSDExecution1(ManageCartService ManageCartSSDExecution1StartEnd ManageCartSSDExecution1FinishEnd)
+		Execution::ManageCartSSDExecution2(ManageCartService ManageCartSSDExecution2StartEnd ManageCartSSDExecution2FinishEnd)
+		Execution::ManageCartSSDExecution3(ManageCartService ManageCartSSDExecution3StartEnd ManageCartSSDExecution3FinishEnd)
+
+		MessageEnd::ManageCartSSDCallMessage1SendingEnd(Customer ManageCartSSDCallMessage1)
+		ExecutionEnd::ManageCartSSDExecution1StartEnd(ManageCartService ManageCartSSDExecution1)
+		ExecutionEnd::ManageCartSSDExecution1FinishEnd(ManageCartService ManageCartSSDExecution1)
+		MessageEnd::ManageCartSSDCallMessage1ReturnReceivingEnd(Customer ManageCartSSDCallMessage1Return)
+		MessageEnd::ManageCartSSDCallMessage3SendingEnd(Customer ManageCartSSDCallMessage3)
+		ExecutionEnd::ManageCartSSDExecution2StartEnd(ManageCartService ManageCartSSDExecution2)
+		ExecutionEnd::ManageCartSSDExecution2FinishEnd(ManageCartService ManageCartSSDExecution2)
+		MessageEnd::ManageCartSSDCallMessage3ReturnReceivingEnd(Customer ManageCartSSDCallMessage3Return)
+		MessageEnd::ManageCartSSDCallMessage5SendingEnd(Customer ManageCartSSDCallMessage5)
+		ExecutionEnd::ManageCartSSDExecution3StartEnd(ManageCartService ManageCartSSDExecution3)
+		ExecutionEnd::ManageCartSSDExecution3FinishEnd(ManageCartService ManageCartSSDExecution3)
+		MessageEnd::ManageCartSSDCallMessage5ReturnReceivingEnd(Customer ManageCartSSDCallMessage5Return)
+
+	}
+
+	Interaction OrderPaymentSSD {
+
+		[Participants: Customer OrderPaymentService]
+
+		CallMessage::OrderPaymentSSDCallMessage1(orderPay OrderPaymentSSDCallMessage1SendingEnd -> OrderPaymentSSDExecution1StartEnd)
+		ReturnMessage::OrderPaymentSSDCallMessage1Return(OrderPaymentSSDExecution1FinishEnd -> OrderPaymentSSDCallMessage1ReturnReceivingEnd OrderPaymentSSDCallMessage1)
+
+		Execution::OrderPaymentSSDExecution1(OrderPaymentService OrderPaymentSSDExecution1StartEnd OrderPaymentSSDExecution1FinishEnd)
+
+		MessageEnd::OrderPaymentSSDCallMessage1SendingEnd(Customer OrderPaymentSSDCallMessage1)
+		ExecutionEnd::OrderPaymentSSDExecution1StartEnd(OrderPaymentService OrderPaymentSSDExecution1)
+		ExecutionEnd::OrderPaymentSSDExecution1FinishEnd(OrderPaymentService OrderPaymentSSDExecution1)
+		MessageEnd::OrderPaymentSSDCallMessage1ReturnReceivingEnd(Customer OrderPaymentSSDCallMessage1Return)
+
+	}
+
+	Interaction ApplyRefundSSD {
+
+		[Participants: Customer ApplyRefundService]
+
+		CallMessage::ApplyRefundSSDCallMessage1(applyRefund ApplyRefundSSDCallMessage1SendingEnd -> ApplyRefundSSDExecution1StartEnd)
+		ReturnMessage::ApplyRefundSSDCallMessage1Return(ApplyRefundSSDExecution1FinishEnd -> ApplyRefundSSDCallMessage1ReturnReceivingEnd ApplyRefundSSDCallMessage1)
+
+		Execution::ApplyRefundSSDExecution1(ApplyRefundService ApplyRefundSSDExecution1StartEnd ApplyRefundSSDExecution1FinishEnd)
+
+		MessageEnd::ApplyRefundSSDCallMessage1SendingEnd(Customer ApplyRefundSSDCallMessage1)
+		ExecutionEnd::ApplyRefundSSDExecution1StartEnd(ApplyRefundService ApplyRefundSSDExecution1)
+		ExecutionEnd::ApplyRefundSSDExecution1FinishEnd(ApplyRefundService ApplyRefundSSDExecution1)
+		MessageEnd::ApplyRefundSSDCallMessage1ReturnReceivingEnd(Customer ApplyRefundSSDCallMessage1Return)
+
+	}
+
+	Interaction MabageOrdersSSD {
+
+		[Participants: Admin MabageOrdersService]
+
+		CallMessage::MabageOrdersSSDCallMessage1(browseOrder MabageOrdersSSDCallMessage1SendingEnd -> MabageOrdersSSDExecution1StartEnd)
+		ReturnMessage::MabageOrdersSSDCallMessage1Return(MabageOrdersSSDExecution1FinishEnd -> MabageOrdersSSDCallMessage1ReturnReceivingEnd MabageOrdersSSDCallMessage1)
+		CallMessage::MabageOrdersSSDCallMessage3(deleteOrder MabageOrdersSSDCallMessage3SendingEnd -> MabageOrdersSSDExecution2StartEnd)
+		ReturnMessage::MabageOrdersSSDCallMessage3Return(MabageOrdersSSDExecution2FinishEnd -> MabageOrdersSSDCallMessage3ReturnReceivingEnd MabageOrdersSSDCallMessage3)
+
+		Execution::MabageOrdersSSDExecution1(MabageOrdersService MabageOrdersSSDExecution1StartEnd MabageOrdersSSDExecution1FinishEnd)
+		Execution::MabageOrdersSSDExecution2(MabageOrdersService MabageOrdersSSDExecution2StartEnd MabageOrdersSSDExecution2FinishEnd)
+
+		MessageEnd::MabageOrdersSSDCallMessage1SendingEnd(Admin MabageOrdersSSDCallMessage1)
+		ExecutionEnd::MabageOrdersSSDExecution1StartEnd(MabageOrdersService MabageOrdersSSDExecution1)
+		ExecutionEnd::MabageOrdersSSDExecution1FinishEnd(MabageOrdersService MabageOrdersSSDExecution1)
+		MessageEnd::MabageOrdersSSDCallMessage1ReturnReceivingEnd(Admin MabageOrdersSSDCallMessage1Return)
+		MessageEnd::MabageOrdersSSDCallMessage3SendingEnd(Admin MabageOrdersSSDCallMessage3)
+		ExecutionEnd::MabageOrdersSSDExecution2StartEnd(MabageOrdersService MabageOrdersSSDExecution2)
+		ExecutionEnd::MabageOrdersSSDExecution2FinishEnd(MabageOrdersService MabageOrdersSSDExecution2)
+		MessageEnd::MabageOrdersSSDCallMessage3ReturnReceivingEnd(Admin MabageOrdersSSDCallMessage3Return)
+
+	}
+
+	Interaction ManageRefundSSD {
+
+		[Participants: Admin ManageRefundService]
+
+		CallMessage::ManageRefundSSDCallMessage1(refuseRefund ManageRefundSSDCallMessage1SendingEnd -> ManageRefundSSDExecution1StartEnd)
+		ReturnMessage::ManageRefundSSDCallMessage1Return(ManageRefundSSDExecution1FinishEnd -> ManageRefundSSDCallMessage1ReturnReceivingEnd ManageRefundSSDCallMessage1)
+		CallMessage::ManageRefundSSDCallMessage3(agreeRefund ManageRefundSSDCallMessage3SendingEnd -> ManageRefundSSDExecution2StartEnd)
+		ReturnMessage::ManageRefundSSDCallMessage3Return(ManageRefundSSDExecution2FinishEnd -> ManageRefundSSDCallMessage3ReturnReceivingEnd ManageRefundSSDCallMessage3)
+
+		Execution::ManageRefundSSDExecution1(ManageRefundService ManageRefundSSDExecution1StartEnd ManageRefundSSDExecution1FinishEnd)
+		Execution::ManageRefundSSDExecution2(ManageRefundService ManageRefundSSDExecution2StartEnd ManageRefundSSDExecution2FinishEnd)
+
+		MessageEnd::ManageRefundSSDCallMessage1SendingEnd(Admin ManageRefundSSDCallMessage1)
+		ExecutionEnd::ManageRefundSSDExecution1StartEnd(ManageRefundService ManageRefundSSDExecution1)
+		ExecutionEnd::ManageRefundSSDExecution1FinishEnd(ManageRefundService ManageRefundSSDExecution1)
+		MessageEnd::ManageRefundSSDCallMessage1ReturnReceivingEnd(Admin ManageRefundSSDCallMessage1Return)
+		MessageEnd::ManageRefundSSDCallMessage3SendingEnd(Admin ManageRefundSSDCallMessage3)
+		ExecutionEnd::ManageRefundSSDExecution2StartEnd(ManageRefundService ManageRefundSSDExecution2)
+		ExecutionEnd::ManageRefundSSDExecution2FinishEnd(ManageRefundService ManageRefundSSDExecution2)
+		MessageEnd::ManageRefundSSDCallMessage3ReturnReceivingEnd(Admin ManageRefundSSDCallMessage3Return)
+
+	}
+
+	Interaction ManageCommoditySSD {
+
+		[Participants: Admin ManageCommodityService]
+
+		CallMessage::ManageCommoditySSDCallMessage1(addGoods ManageCommoditySSDCallMessage1SendingEnd -> ManageCommoditySSDExecution1StartEnd)
+		ReturnMessage::ManageCommoditySSDCallMessage1Return(ManageCommoditySSDExecution1FinishEnd -> ManageCommoditySSDCallMessage1ReturnReceivingEnd ManageCommoditySSDCallMessage1)
+		CallMessage::ManageCommoditySSDCallMessage3(deleteGoods ManageCommoditySSDCallMessage3SendingEnd -> ManageCommoditySSDExecution2StartEnd)
+		ReturnMessage::ManageCommoditySSDCallMessage3Return(ManageCommoditySSDExecution2FinishEnd -> ManageCommoditySSDCallMessage3ReturnReceivingEnd ManageCommoditySSDCallMessage3)
+		CallMessage::ManageCommoditySSDCallMessage5(checkGoods ManageCommoditySSDCallMessage5SendingEnd -> ManageCommoditySSDExecution3StartEnd)
+		ReturnMessage::ManageCommoditySSDCallMessage5Return(ManageCommoditySSDExecution3FinishEnd -> ManageCommoditySSDCallMessage5ReturnReceivingEnd ManageCommoditySSDCallMessage5)
+		CallMessage::ManageCommoditySSDCallMessage7(modifyPrice ManageCommoditySSDCallMessage7SendingEnd -> ManageCommoditySSDExecution4StartEnd)
+		ReturnMessage::ManageCommoditySSDCallMessage7Return(ManageCommoditySSDExecution4FinishEnd -> ManageCommoditySSDCallMessage7ReturnReceivingEnd ManageCommoditySSDCallMessage7)
+
+		Execution::ManageCommoditySSDExecution1(ManageCommodityService ManageCommoditySSDExecution1StartEnd ManageCommoditySSDExecution1FinishEnd)
+		Execution::ManageCommoditySSDExecution2(ManageCommodityService ManageCommoditySSDExecution2StartEnd ManageCommoditySSDExecution2FinishEnd)
+		Execution::ManageCommoditySSDExecution3(ManageCommodityService ManageCommoditySSDExecution3StartEnd ManageCommoditySSDExecution3FinishEnd)
+		Execution::ManageCommoditySSDExecution4(ManageCommodityService ManageCommoditySSDExecution4StartEnd ManageCommoditySSDExecution4FinishEnd)
+
+		MessageEnd::ManageCommoditySSDCallMessage1SendingEnd(Admin ManageCommoditySSDCallMessage1)
+		ExecutionEnd::ManageCommoditySSDExecution1StartEnd(ManageCommodityService ManageCommoditySSDExecution1)
+		ExecutionEnd::ManageCommoditySSDExecution1FinishEnd(ManageCommodityService ManageCommoditySSDExecution1)
+		MessageEnd::ManageCommoditySSDCallMessage1ReturnReceivingEnd(Admin ManageCommoditySSDCallMessage1Return)
+		MessageEnd::ManageCommoditySSDCallMessage3SendingEnd(Admin ManageCommoditySSDCallMessage3)
+		ExecutionEnd::ManageCommoditySSDExecution2StartEnd(ManageCommodityService ManageCommoditySSDExecution2)
+		ExecutionEnd::ManageCommoditySSDExecution2FinishEnd(ManageCommodityService ManageCommoditySSDExecution2)
+		MessageEnd::ManageCommoditySSDCallMessage3ReturnReceivingEnd(Admin ManageCommoditySSDCallMessage3Return)
+		MessageEnd::ManageCommoditySSDCallMessage5SendingEnd(Admin ManageCommoditySSDCallMessage5)
+		ExecutionEnd::ManageCommoditySSDExecution3StartEnd(ManageCommodityService ManageCommoditySSDExecution3)
+		ExecutionEnd::ManageCommoditySSDExecution3FinishEnd(ManageCommodityService ManageCommoditySSDExecution3)
+		MessageEnd::ManageCommoditySSDCallMessage5ReturnReceivingEnd(Admin ManageCommoditySSDCallMessage5Return)
+		MessageEnd::ManageCommoditySSDCallMessage7SendingEnd(Admin ManageCommoditySSDCallMessage7)
+		ExecutionEnd::ManageCommoditySSDExecution4StartEnd(ManageCommodityService ManageCommoditySSDExecution4)
+		ExecutionEnd::ManageCommoditySSDExecution4FinishEnd(ManageCommodityService ManageCommoditySSDExecution4)
+		MessageEnd::ManageCommoditySSDCallMessage7ReturnReceivingEnd(Admin ManageCommoditySSDCallMessage7Return)
+
+	}
+
+	Interaction ManageUserSSD {
+
+		[Participants: Super_admin ManageUserService]
+
+		CallMessage::ManageUserSSDCallMessage1(browseUser ManageUserSSDCallMessage1SendingEnd -> ManageUserSSDExecution1StartEnd)
+		ReturnMessage::ManageUserSSDCallMessage1Return(ManageUserSSDExecution1FinishEnd -> ManageUserSSDCallMessage1ReturnReceivingEnd ManageUserSSDCallMessage1)
+		CallMessage::ManageUserSSDCallMessage3(addUser ManageUserSSDCallMessage3SendingEnd -> ManageUserSSDExecution2StartEnd)
+		ReturnMessage::ManageUserSSDCallMessage3Return(ManageUserSSDExecution2FinishEnd -> ManageUserSSDCallMessage3ReturnReceivingEnd ManageUserSSDCallMessage3)
+		CallMessage::ManageUserSSDCallMessage5(deleteUser ManageUserSSDCallMessage5SendingEnd -> ManageUserSSDExecution3StartEnd)
+		ReturnMessage::ManageUserSSDCallMessage5Return(ManageUserSSDExecution3FinishEnd -> ManageUserSSDCallMessage5ReturnReceivingEnd ManageUserSSDCallMessage5)
+
+		Execution::ManageUserSSDExecution1(ManageUserService ManageUserSSDExecution1StartEnd ManageUserSSDExecution1FinishEnd)
+		Execution::ManageUserSSDExecution2(ManageUserService ManageUserSSDExecution2StartEnd ManageUserSSDExecution2FinishEnd)
+		Execution::ManageUserSSDExecution3(ManageUserService ManageUserSSDExecution3StartEnd ManageUserSSDExecution3FinishEnd)
+
+		MessageEnd::ManageUserSSDCallMessage1SendingEnd(Super_admin ManageUserSSDCallMessage1)
+		ExecutionEnd::ManageUserSSDExecution1StartEnd(ManageUserService ManageUserSSDExecution1)
+		ExecutionEnd::ManageUserSSDExecution1FinishEnd(ManageUserService ManageUserSSDExecution1)
+		MessageEnd::ManageUserSSDCallMessage1ReturnReceivingEnd(Super_admin ManageUserSSDCallMessage1Return)
+		MessageEnd::ManageUserSSDCallMessage3SendingEnd(Super_admin ManageUserSSDCallMessage3)
+		ExecutionEnd::ManageUserSSDExecution2StartEnd(ManageUserService ManageUserSSDExecution2)
+		ExecutionEnd::ManageUserSSDExecution2FinishEnd(ManageUserService ManageUserSSDExecution2)
+		MessageEnd::ManageUserSSDCallMessage3ReturnReceivingEnd(Super_admin ManageUserSSDCallMessage3Return)
+		MessageEnd::ManageUserSSDCallMessage5SendingEnd(Super_admin ManageUserSSDCallMessage5)
+		ExecutionEnd::ManageUserSSDExecution3StartEnd(ManageUserService ManageUserSSDExecution3)
+		ExecutionEnd::ManageUserSSDExecution3FinishEnd(ManageUserService ManageUserSSDExecution3)
+		MessageEnd::ManageUserSSDCallMessage5ReturnReceivingEnd(Super_admin ManageUserSSDCallMessage5Return)
+
+	}
+
+	Service Lab1System {
+
+	}
+
+	Service ThirdPartyServices {
+
+	}
+
+	Service SearchGoodsService {
+
+		[Operation]
+		browseGoods(id, name)
+
+	}
+
+	Service ManageCartService {
+
+		[Operation]
+		addCart(goodsId, goodsName, goodsNum, goodsPrice)
+		browseCart(goodsId, goodsName, goodsNum, goodsPrice, totalPrice)
+		deleteCart(goodsId, goodsName, goodsNum, totalPrice)
+
+	}
+
+	Service OrderPaymentService {
+
+		[Operation]
+		orderPay(orderId, goodsId, goodsName, goodsNum, totalPrice)
+
+	}
+
+	Service ApplyRefundService {
+
+		[Operation]
+		applyRefund(orderID, totalNum)
+
+	}
+
+	Service MabageOrdersService {
+
+		[Operation]
+		browseOrder(orderId, goodsId, goodsName, goodsPrice, totalPrice)
+		deleteOrder(orderId, totalPrice)
+
+	}
+
+	Service ManageRefundService {
+
+		[Operation]
+		refuseRefund(orderId)
+		agreeRefund(orderId, goodsId, goodsName, goodsNum, totalPrice)
+
+	}
+
+	Service ManageCommodityService {
+
+		[Operation]
+		addGoods(goodsId, goodsName, addNum, totalNum)
+		deleteGoods(goodsId, goodsName, goodsNum, totalNum)
+		checkGoods(goodsId, goodsName, goodsNum, goodsPrice, totalNum)
+		modifyPrice(goodsId, goodsName, goodsPrice)
+
+	}
+
+	Service ManageUserService {
+
+		[Operation]
+		browseUser(userId, userName, userPassword, identity)
+		addUser(userId, userName, userPassword, identity)
+		deleteUser(userId, userName, userPassword, identity)
+
+	}
+
+	Contract ManageCartService::addCart(goodsId : String, goodsName : String, goodsNum : String, goodsPrice : String) : Boolean {
+
+		definition:
+			cart:ShoppingCart = ShoppingCart.allInstance()->any(c:ShoppingCart | c.GoodsId = goodsId)
+
+		precondition:
+			cart.oclIsUndefined() = true
+		postcondition:
+			let c:ShoppingCart in
+			c.oclIsNew() and
+			c.Goodsid = goodsId and
+			c.GoodsName = goodsname and
+			c.GoodsNum = goodsNum and
+			c.GoodsPrice = goodsPrice and
+			ShoppingCart.allInstance()->includes(c) and
+			result = true
+	}
+
+	Contract SearchGoodsService::browseGoods(id : String, name : String) : Boolean {
+
+		definition:
+			customer:User = User.allInstance()->any(cust:User | cust.UserId = id)
+
+		precondition:
+			customer.oclIsUndefined() = true and
+			customer.UserStatus = UserStatus::CUSTOMER
+		postcondition:
+			let cust:User in
+			cust.oclIsNew() and
+			cust.UserId = id and
+			cust.UserName = name and
+			User.allInstance()->includes(cust) and
+			result = true
+	}
+
+	Contract ManageCartService::browseCart(goodsId : String, goodsName : String, goodsNum : String, goodsPrice : String, totalPrice : String) : Boolean {
+
+		definition:
+			cart:ShoppingCart = ShoppingCart.allInstance()->any(c:ShoppingCart | c.GoodsId = goodsId)
+
+		precondition:
+			cart.oclIsUndefined() = true
+		postcondition:
+			let c:ShoppingCart in
+			c.oclIsNew() and
+			c.Goodsid = goodsId and
+			c.GoodsName = goodsname and
+			c.GoodsNum = goodsNum and
+			c.GoodsPrice = goodsPrice and
+			c.TotalPrice = totalPrice and
+			ShoppingCart.allInstance()->includes(c) and
+			result = true
+	}
+
+	Contract ManageCartService::deleteCart(goodsId : String, goodsName : String, goodsNum : String, totalPrice : String) : Boolean {
+
+		definition:
+			cart:ShoppingCart = ShoppingCart.allInstance()->any(c:ShoppingCart | c.GoodsId = goodsId)
+
+		precondition:
+			cart.oclIsUndefined() = true
+		postcondition:
+			let c:ShoppingCart in
+			c.oclIsNew() and
+			c.Goodsid = goodsId and
+			c.GoodsName = goodsname and
+			c.GoodsNum = goodsNum and
+			c.TotalPrice = totalPrice and
+			ShoppingCart.allInstance()->includes(c) and
+			result = true
+	}
+
+	Contract OrderPaymentService::orderPay(orderId : String, goodsId : String, goodsName : String, goodsNum : String, totalPrice : String) : Boolean {
+
+		definition:
+			order:Orders = Orders.allInstance()->any(o:Orders | o.OrderId = orderId)
+
+		precondition:
+			order.oclIsUndefined() = true
+		postcondition:
+			let o:Orders in
+			o.oclIsNew() and
+			o.OrderId = orderId and
+			o.Goodsid = goodsId and
+			o.GoodsName = goodsname and
+			o.GoodsNum = goodsNum and
+			o.TotalPrice = totalPrice and
+			Orders.allInstance()->includes(o) and
+			result = true
+	}
+
+	Contract ApplyRefundService::applyRefund(orderID : String, totalNum : String) : Boolean {
+
+		definition:
+			order:Orders = Orders.allInstance()->any(o:Orders | o.OrderId = orderID)
+
+		precondition:
+			order.oclIsUndefined() = true
+		postcondition:
+			let o:Orders in
+			o.oclIsNew() and
+			o.TotalPrice = totalNum and
+			Orders.allInstance()->includes(o) and
+			result = true
+	}
+
+	Contract MabageOrdersService::browseOrder(orderId : String, goodsId : String, goodsName : String, goodsPrice : String, totalPrice : String) : Boolean {
+
+		definition:
+			order:Orders = Orders.allInstance()->any(o:Orders | o.OrderId = orderId)
+
+		precondition:
+			order.oclIsUndefined() = true
+		postcondition:
+			let o:Orders in
+			o.oclIsNew() and
+			o.OrderId = orderId and
+			o.Goodsid = goodsId and
+			o.GoodsName = goodsname and
+			o.GoodsNum = goodsNum and
+			o.GoodsPrice = goodsPrice and
+			o.TotalPrice = totalPrice and
+			Orders.allInstance()->includes(o) and
+			result = true
+	}
+
+	Contract MabageOrdersService::deleteOrder(orderId : String, totalPrice : String) : Boolean {
+
+		definition:
+			order:Orders = Orders.allInstance()->any(o:Orders | o.OrderId = orderId)
+
+		precondition:
+			order.oclIsUndefined() = true
+		postcondition:
+			let o:Orders in
+			o.oclIsNew() and
+			o.OrderId = orderId and
+			o.TotalPrice = totalPrice and
+			Orders.allInstance()->includes(o) and
+			result = true
+	}
+
+	Contract ManageRefundService::refuseRefund(orderId : String) : Boolean {
+
+		definition:
+			order:Orders = Orders.allInstance()->any(o:Orders | o.OrderId = orderId)
+
+		precondition:
+			order.oclIsUndefined() = true
+		postcondition:
+			let o:Orders in
+			o.oclIsNew() and
+			o.OrderId = orderId and
+			Orders.allInstance()->includes(o) and
+			result = true
+	}
+
+	Contract ManageRefundService::agreeRefund(orderId : String, goodsId : String, goodsName : String, goodsNum : String, totalPrice : String) : Boolean {
+
+		definition:
+			order:Orders = Orders.allInstance()->any(o:Orders | o.OrderId = orderId)
+
+		precondition:
+			order.oclIsUndefined() = true
+		postcondition:
+			let o:Orders in
+			o.oclIsNew() and
+			o.OrderId = orderId and
+			o.Goodsid = goodsId and
+			o.GoodsName = goodsname and
+			o.GoodsNum = goodsNum and
+			o.TotalPrice = totalPrice and
+			Orders.allInstance()->includes(o) and
+			result = true
+	}
+
+	Contract ManageCommodityService::addGoods(goodsId : String, goodsName : String, addNum : String, totalNum : String) : Boolean {
+
+		definition:
+			commodity:Commodity = Commodity.allInstance()->any(comm:Commodity | comm.GoodsId = goodsId)
+
+		precondition:
+			commodity.oclIsUndefined() = true
+		postcondition:
+			let comm:Commodity in
+			comm.oclIsNew() and
+			comm.Goodsid = goodsId and
+			comm.GoodsName = goodsname and
+			comm.GoodsNum = totalNum + addNum and
+			Commodity.allInstance()->includes(comm) and
+			result = true
+	}
+
+	Contract ManageCommodityService::deleteGoods(goodsId : String, goodsName : String, goodsNum : String, totalNum : String) : Boolean {
+
+		definition:
+			commodity:Commodity = Commodity.allInstance()->any(comm:Commodity | comm.GoodsId = goodsId)
+
+		precondition:
+			commodity.oclIsUndefined() = true
+		postcondition:
+			let comm:Commodity in
+			comm.oclIsNew() and
+			comm.Goodsid = goodsId and
+			comm.GoodsName = goodsname and
+			comm.GoodsNum = totalNum - goodsNum and
+			Commodity.allInstance()->includes(comm) and
+			result = true
+	}
+
+	Contract ManageCommodityService::checkGoods(goodsId : String, goodsName : String, goodsNum : String, goodsPrice : String, totalNum : String) : Boolean {
+
+		definition:
+			commodity:Commodity = Commodity.allInstance()->any(comm:Commodity | comm.GoodsId = goodsId)
+
+		precondition:
+			commodity.oclIsUndefined() = true
+		postcondition:
+			let comm:Commodity in
+			comm.oclIsNew() and
+			comm.Goodsid = goodsId and
+			comm.GoodsName = goodsname and
+			comm.GoodsPrice = goodsPrice and
+			comm.GoodsNum = totalNum and
+			Commodity.allInstance()->includes(comm) and
+			result = true
+	}
+
+	Contract ManageCommodityService::modifyPrice(goodsId : String, goodsName : String, goodsPrice : String) : Boolean {
+
+		definition:
+			commodity:Commodity = Commodity.allInstance()->any(comm:Commodity | comm.GoodsId = goodsId)
+
+		precondition:
+			commodity.oclIsUndefined() = true
+		postcondition:
+			let comm:Commodity in
+			comm.oclIsNew() and
+			comm.Goodsid = goodsId and
+			comm.GoodsName = goodsname and
+			comm.GoodsPrice = goodsPrice and
+			Commodity.allInstance()->includes(comm) and
+			result = true
+	}
+
+	Contract ManageUserService::browseUser(userId : String, userName : String, userPassword : String, identity : String) : Boolean {
+
+		definition:
+			admin:User = User.allInstance()->any(ad:User | ad.UserId = userId)
+
+		precondition:
+			admin.oclIsUndefined() = false
+		postcondition:
+			let ad:User in
+			ad.oclIsNew() and
+			ad.UserId = userId and
+			ad.UserName = userName and
+			ad.Password = userPassword and
+			ad.Identity = identity and
+			User.allInstance()->includes(ad) and
+			result = true
+	}
+
+	Contract ManageUserService::addUser(userId : String, userName : String, userPassword : String, identity : String) : Boolean {
+
+		definition:
+			admin:User = User.allInstance()->any(ad:User | ad.UserId = userId)
+
+		precondition:
+			admin.oclIsUndefined() = false
+		postcondition:
+			let ad:User in
+			admin.oclIsNew() and
+			ad.UserId = userId and
+			ad.UserName = userName and
+			ad.Password = userPassword and
+			ad.Identity = identity and
+			User.allInstance()->includes(ad) and
+			result = true
+	}
+
+	Contract ManageUserService::deleteUser(userId : String, userName : String, userPassword : String, identity : String) : Boolean {
+
+		definition:
+			admin:User = User.allInstance()->any(ad:User | ad.UserId = userId)
+
+		precondition:
+			admin.oclIsUndefined() = false
+		postcondition:
+			let ad:User in
+			ad.oclIsNew() and
+			ad.UserId = userId and
+			ad.UserName = userName and
+			ad.Password = userPassword and
+			ad.Identity = identity and
+			User.allInstance()->includes(ad) and
+			result = true
+	}
+
+}
+
+DomainModel Lab1 {
+
+	@AutoCRUD Entity User {
+		UserId : String
+		UserName : String
+		Password : String
+		UserStatus : UserStatus[CUSTOMER|ADMIN|SUPERADMIN]
+		Identity : String
+	}
+
+	@AutoCRUD Entity Customer extends User {
+		OrderNum : Integer
+
+		[Refer]
+		CustomerHasOrders : Orders* Association
+	}
+
+	@AutoCRUD Entity Admin extends User {
+		PlaceOrderNum : Integer
+	}
+
+	@AutoCRUD Entity SuperAdmin extends User {
+		Introduce : String
+	}
+
+	@AutoCRUD Entity Orders {
+		OrderId : String
+		GoodsId : String
+		GoodsName : String
+		GoodsPrice : String
+		TotalPrice : String
+		UserId : String
+		OrderAffair : OrderAffairType[BROWSE|DELETE]
+
+		[Refer]
+		OrderstoUser : User ! Association
+		OrdersOfCustomer : Customer ! Association
+		OrdersFromShoppingCart : ShoppingCart Association
+		OrdersHasGoods : Goods* Association
+	}
+
+	@AutoCRUD Entity ShoppingCart {
+		GoodsId : String
+		GoodsName : String
+		GoodsNum : String
+		GoodsPrice : String
+		CartAffair : CartAffiarType[ADD|BROWSE|DELETE]
+		UserId : Integer
+		TotalPrice : String
+
+		[Refer]
+		ShoppingCartToOrders : Orders ! Association
+		ShoppingCartHasGoods : Goods* Association
+	}
+
+	@AutoCRUD Entity Commodity extends Goods {
+		ModifyPrice : Integer
+		ComAffair : ComAffairType[ADD|DELETE|CHECK|MODIFYPRICE]
+	}
+
+	Entity Goods {
+		GoodsId : String
+		GoodsName : String
+		GoodsNum : String
+		GoodsPrice : String
+
+		[Refer]
+		GoodsInShoppingCart : ShoppingCart* ! Aggregation
+		GoodsInOrders : Orders* ! Aggregation
+	}
+
+	Entity Payment extends Orders {
+		IfPay : Boolean
+		IfRefund : Boolean
+	}
+
+}
+

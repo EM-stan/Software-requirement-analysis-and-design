@@ -1,0 +1,12 @@
+As a SuperAdmin, I want to manage message of users, so that I can know how many people use system
+{
+	Basic Flow {
+		(User)1. the SuperAdmin shall login with his identity and password.
+		(System)2. if SuperAdmin identity or password is wrong the system shall refuse service.
+		(System)3. if SuperAdmin identity is not exist the system shall refuse service.
+		(System)4. the system shall show customers and admins message for SuperAdmin.
+		(User)5. the SuperAdmin shall edit them message.
+		(System) 6. when SuperAdmin submit new message the system shall invoke Check Handle.
+		(System) 7. if submit message is not right the system shall refuse service.
+	}
+}
