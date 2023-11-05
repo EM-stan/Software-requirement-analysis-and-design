@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated lab2 -->
+      <package
+            uri="http://www.rm2pt.com/lab2"
+            class="org.rm2pt.lab2.metamodel.lab2.Lab2Package"
+            genModel="model/lab2.genmodel"/>
+   </extension>
+
+</plugin>

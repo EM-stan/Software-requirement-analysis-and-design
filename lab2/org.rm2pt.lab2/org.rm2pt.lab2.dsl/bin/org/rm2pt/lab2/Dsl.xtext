@@ -1,0 +1,9 @@
+grammar org.rm2pt.lab2.Dsl with org.eclipse.xtext.common.Terminals
+
+generate dsl "http://www.rm2pt.org/lab2/Dsl"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

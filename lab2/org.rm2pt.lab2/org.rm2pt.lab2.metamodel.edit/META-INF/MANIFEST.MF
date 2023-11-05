@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.rm2pt.lab2.metamodel.edit;singleton:=true
+Automatic-Module-Name: org.rm2pt.lab2.metamodel.edit
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: org.rm2pt.lab2.metamodel.lab2.provider.Lab2EditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.rm2pt.lab2.metamodel.lab2.provider
+Require-Bundle: org.eclipse.core.runtime,
+ org.rm2pt.lab2.metamodel;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
