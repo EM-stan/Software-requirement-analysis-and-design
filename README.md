@@ -1,4 +1,5 @@
 # Software-requirement-analysis-and-design
+实验一实验报告：
 该系统为在线购物系统，对该系统进行简要的需求分析，并且建模，其中顾客可以浏览商品，管理购物车，退款等，管理员可以管理退款申请，管理订单和商品，超级管理员管理用户信息。  
 UML建模结果如下：  
 概念类图：  
@@ -18,4 +19,15 @@ UML建模结果如下：
 顺序图有8个，操作总数有17个，系统合约数量有17个  
 需求化原型结果如下：  
 ![image](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/256c0f41-6c97-4d30-8ff9-1d72a9e203a1)
+
+实验二实验报告：  
+该系统是基于UML模型的学生成绩管理系统进行领域建模  
+元模型截图如下：  
+ ![image](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/25a73460-8ee1-488f-aada-295227d7ed49)  
+插件测试截图如下：  
+![task4_1](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/2d60b263-6be6-4abd-936b-97484b3e0f5f) 
+![task4_2](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/ca374cc6-29ae-4a55-8d77-5a1e14722ca6)  
+
+
+
 
