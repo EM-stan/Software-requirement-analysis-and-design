@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:lab2="http://www.rm2pt.com/lab2" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_wIMK0H3_Ee6cf_w7vioKUA" selectedViews="_jSfOQH4AEe6ZQp4PyVVAuw" version="14.5.1.202106111100">
+    <semanticResources>My.lab2</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_jSfOQH4AEe6ZQp4PyVVAuw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_JgezUH4BEe6FRq_qhNM4xQ" name="new Class diagram" repPath="#_JgTNIH4BEe6FRq_qhNM4xQ" changeId="44e104f9-1785-4f1c-9562-5427365532e8">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']"/>
+        <target xmi:type="lab2:Class" href="My.lab2#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_JgTNIH4BEe6FRq_qhNM4xQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_JgxHMH4BEe6FRq_qhNM4xQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_JgxuQH4BEe6FRq_qhNM4xQ" type="Sirius" element="_JgTNIH4BEe6FRq_qhNM4xQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_JhjxYH4BEe6FRq_qhNM4xQ" type="2001" element="_Jg5qEH4BEe6FRq_qhNM4xQ">
+          <children xmi:type="notation:Node" xmi:id="_JhpQ8H4BEe6FRq_qhNM4xQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_JhpQ8X4BEe6FRq_qhNM4xQ" x="51" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UoMx0H4FEe6d1IlwMaZzSg" type="3005" element="_UoEO8H4FEe6d1IlwMaZzSg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UoMx0X4FEe6d1IlwMaZzSg" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UoMx0n4FEe6d1IlwMaZzSg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_JhjxYX4BEe6FRq_qhNM4xQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JhjxYn4BEe6FRq_qhNM4xQ" x="410" y="215" width="61" height="66"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_JhuJcH4BEe6FRq_qhNM4xQ" type="2001" element="_JhI6oH4BEe6FRq_qhNM4xQ">
+          <children xmi:type="notation:Node" xmi:id="_JhuwgH4BEe6FRq_qhNM4xQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_JhuwgX4BEe6FRq_qhNM4xQ" x="1" y="-17"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UoQcMH4FEe6d1IlwMaZzSg" type="3005" element="_UoFdEn4FEe6d1IlwMaZzSg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UoQcMX4FEe6d1IlwMaZzSg" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UoQcMn4FEe6d1IlwMaZzSg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_JhuJcX4BEe6FRq_qhNM4xQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JhuJcn4BEe6FRq_qhNM4xQ" x="470" y="57" width="51" height="57"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_JhvXkH4BEe6FRq_qhNM4xQ" type="2001" element="_JhJhsX4BEe6FRq_qhNM4xQ">
+          <children xmi:type="notation:Node" xmi:id="_JhvXk34BEe6FRq_qhNM4xQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_JhvXlH4BEe6FRq_qhNM4xQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UoRDQH4FEe6d1IlwMaZzSg" type="3005" element="_UoFdFX4FEe6d1IlwMaZzSg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UoRDQX4FEe6d1IlwMaZzSg" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UoRDQn4FEe6d1IlwMaZzSg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_JhvXkX4BEe6FRq_qhNM4xQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JhvXkn4BEe6FRq_qhNM4xQ" x="265" y="235" width="51" height="74"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WQ24EH4NEe64rK_YUFuEig" type="2001" element="_WQsgBX4NEe64rK_YUFuEig">
+          <children xmi:type="notation:Node" xmi:id="_WQ7JgH4NEe64rK_YUFuEig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WQ7JgX4NEe64rK_YUFuEig" x="41" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WRNdYH4NEe64rK_YUFuEig" type="3005" element="_WQtuIH4NEe64rK_YUFuEig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WRNdYX4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRNdYn4NEe64rK_YUFuEig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WQ24EX4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WQ24En4NEe64rK_YUFuEig" x="2" width="40" height="28"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WRH90H4NEe64rK_YUFuEig" type="2001" element="_WQuVMX4NEe64rK_YUFuEig">
+          <children xmi:type="notation:Node" xmi:id="_WRIk4H4NEe64rK_YUFuEig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WRIk4X4NEe64rK_YUFuEig" x="41" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WRNdY34NEe64rK_YUFuEig" type="3005" element="_WQu8QH4NEe64rK_YUFuEig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WRNdZH4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRNdZX4NEe64rK_YUFuEig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WRH90X4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRH90n4NEe64rK_YUFuEig" x="205" y="65" width="40" height="28"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WRJL8H4NEe64rK_YUFuEig" type="2001" element="_WQu8Qn4NEe64rK_YUFuEig">
+          <children xmi:type="notation:Node" xmi:id="_WRJL834NEe64rK_YUFuEig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WRJL9H4NEe64rK_YUFuEig" x="41" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WROEcH4NEe64rK_YUFuEig" type="3005" element="_WQu8Q34NEe64rK_YUFuEig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WROEcX4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WROEcn4NEe64rK_YUFuEig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WRJL8X4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRJL8n4NEe64rK_YUFuEig" x="115" y="195" width="40" height="28"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WRJzAH4NEe64rK_YUFuEig" type="2001" element="_WQu8RX4NEe64rK_YUFuEig">
+          <children xmi:type="notation:Node" xmi:id="_WRJzA34NEe64rK_YUFuEig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WRJzBH4NEe64rK_YUFuEig" x="41" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WROEc34NEe64rK_YUFuEig" type="3005" element="_WQvjUH4NEe64rK_YUFuEig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WROEdH4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WROEdX4NEe64rK_YUFuEig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WRJzAX4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRJzAn4NEe64rK_YUFuEig" x="175" y="406" width="40" height="40"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WRLoMH4NEe64rK_YUFuEig" type="2001" element="_WQvjUn4NEe64rK_YUFuEig">
+          <children xmi:type="notation:Node" xmi:id="_WRMPQH4NEe64rK_YUFuEig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WRMPQX4NEe64rK_YUFuEig" x="41" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WROEdn4NEe64rK_YUFuEig" type="3005" element="_WQvjU34NEe64rK_YUFuEig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WROEd34NEe64rK_YUFuEig" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WROrgH4NEe64rK_YUFuEig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WRLoMX4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRLoMn4NEe64rK_YUFuEig" x="445" y="445" width="40" height="40"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WRMPQn4NEe64rK_YUFuEig" type="2001" element="_WQvjVX4NEe64rK_YUFuEig">
+          <children xmi:type="notation:Node" xmi:id="_WRM2UH4NEe64rK_YUFuEig" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WRM2UX4NEe64rK_YUFuEig" x="41" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WROrgX4NEe64rK_YUFuEig" type="3005" element="_WQwKYH4NEe64rK_YUFuEig">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WROrgn4NEe64rK_YUFuEig" fontName="Microsoft YaHei UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WROrg34NEe64rK_YUFuEig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WRMPQ34NEe64rK_YUFuEig" fontName="Microsoft YaHei UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WRMPRH4NEe64rK_YUFuEig" x="661" y="305" width="40" height="40"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_JgxuQX4BEe6FRq_qhNM4xQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_JhMlAH4BEe6FRq_qhNM4xQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_JhNMEH4BEe6FRq_qhNM4xQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Jg5qEH4BEe6FRq_qhNM4xQ" name="Alice" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="lab2:Student" href="My.lab2#//@student.0"/>
+      <semanticElements xmi:type="lab2:Student" href="My.lab2#//@student.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_UoEO8H4FEe6d1IlwMaZzSg" workspacePath="/org.rm2pt.sample.lab2.design/icons/Stu.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='StudentNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='StudentNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_JhI6oH4BEe6FRq_qhNM4xQ" name="Susan" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="lab2:Student" href="My.lab2#//@student.1"/>
+      <semanticElements xmi:type="lab2:Student" href="My.lab2#//@student.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_UoFdEn4FEe6d1IlwMaZzSg" workspacePath="/org.rm2pt.sample.lab2.design/icons/Stu.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='StudentNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='StudentNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_JhJhsX4BEe6FRq_qhNM4xQ" name="Eric" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="lab2:Student" href="My.lab2#//@student.2"/>
+      <semanticElements xmi:type="lab2:Student" href="My.lab2#//@student.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_UoFdFX4FEe6d1IlwMaZzSg" workspacePath="/org.rm2pt.sample.lab2.design/icons/Stu.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='StudentNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='StudentNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WQsgBX4NEe64rK_YUFuEig" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="lab2:SubmitedPaper" href="My.lab2#//@student.0/@answer.0/@submit.0"/>
+      <semanticElements xmi:type="lab2:SubmitedPaper" href="My.lab2#//@student.0/@answer.0/@submit.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WQtuIH4NEe64rK_YUFuEig" workspacePath="/org.rm2pt.sample.lab2.design/icons/paper.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='SubmitedPaperNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='SubmitedPaperNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WQuVMX4NEe64rK_YUFuEig" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="lab2:SubmitedPaper" href="My.lab2#//@student.1/@answer.0/@submit.0"/>
+      <semanticElements xmi:type="lab2:SubmitedPaper" href="My.lab2#//@student.1/@answer.0/@submit.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WQu8QH4NEe64rK_YUFuEig" workspacePath="/org.rm2pt.sample.lab2.design/icons/paper.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='SubmitedPaperNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='SubmitedPaperNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WQu8Qn4NEe64rK_YUFuEig" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="lab2:SubmitedPaper" href="My.lab2#//@student.2/@answer.0/@submit.0"/>
+      <semanticElements xmi:type="lab2:SubmitedPaper" href="My.lab2#//@student.2/@answer.0/@submit.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WQu8Q34NEe64rK_YUFuEig" workspacePath="/org.rm2pt.sample.lab2.design/icons/paper.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='SubmitedPaperNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='SubmitedPaperNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WQu8RX4NEe64rK_YUFuEig" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="lab2:ReportCard" href="My.lab2#//@teacher.0/@input.0"/>
+      <semanticElements xmi:type="lab2:ReportCard" href="My.lab2#//@teacher.0/@input.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WQvjUH4NEe64rK_YUFuEig" workspacePath="/org.rm2pt.sample.lab2.design/icons/ReportCard.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='ReportCardNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='ReportCardNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WQvjUn4NEe64rK_YUFuEig" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="lab2:ReportCard" href="My.lab2#//@teacher.0/@input.1"/>
+      <semanticElements xmi:type="lab2:ReportCard" href="My.lab2#//@teacher.0/@input.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WQvjU34NEe64rK_YUFuEig" workspacePath="/org.rm2pt.sample.lab2.design/icons/ReportCard.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='ReportCardNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='ReportCardNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WQvjVX4NEe64rK_YUFuEig" name="Invalid feature as name" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="lab2:ReportCard" href="My.lab2#//@teacher.0/@input.2"/>
+      <semanticElements xmi:type="lab2:ReportCard" href="My.lab2#//@teacher.0/@input.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_WQwKYH4NEe64rK_YUFuEig" workspacePath="/org.rm2pt.sample.lab2.design/icons/ReportCard.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='ReportCardNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer/@nodeMappings[name='ReportCardNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_JgYssH4BEe6FRq_qhNM4xQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.rm2pt.sample.lab2.design/description/lab2.odesign#//@ownedViewpoints[name='class']/@ownedRepresentations[name='Class%20diagram']/@defaultLayer"/>
+    <target xmi:type="lab2:Class" href="My.lab2#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

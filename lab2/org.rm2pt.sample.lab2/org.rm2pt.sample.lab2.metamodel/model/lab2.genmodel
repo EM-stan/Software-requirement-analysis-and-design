@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.rm2pt.sample.lab2.metamodel/src-gen" creationIcons="false"
+    editDirectory="/org.rm2pt.sample.lab2.metamodel.edit/src-gen" editorDirectory="/org.rm2pt.sample.lab2.metamodel.editor/src-gen"
+    modelPluginID="org.rm2pt.sample.lab2.metamodel" modelName="Lab2" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>lab2.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Lab2" basePackage="org.rm2pt.sample.lab2.metamodel" disposableProviderFactory="true"
+      ecorePackage="lab2.ecore#/">
+    <genClasses ecoreClass="lab2.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Class/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Class/studentnum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Class/grade"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab2.ecore#//Class/teacher"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab2.ecore#//Class/student"/>
+    </genClasses>
+    <genClasses ecoreClass="lab2.ecore#//Teacher">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Teacher/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Teacher/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Teacher/classid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab2.ecore#//Teacher/teaching"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab2.ecore#//Teacher/input"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lab2.ecore#//Teacher/correct"/>
+    </genClasses>
+    <genClasses ecoreClass="lab2.ecore#//Course">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Course/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Course/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Course/stunum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Course/mean"/>
+    </genClasses>
+    <genClasses ecoreClass="lab2.ecore#//Student">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Student/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Student/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//Student/classid"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab2.ecore#//Student/answer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lab2.ecore#//Student/have"/>
+    </genClasses>
+    <genClasses ecoreClass="lab2.ecore#//ReportCard">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ReportCard/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ReportCard/stuid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ReportCard/stuname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ReportCard/totalscore"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ReportCard/rank"/>
+    </genClasses>
+    <genClasses ecoreClass="lab2.ecore#//ExamPaper">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ExamPaper/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ExamPaper/courseid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ExamPaper/teaid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ExamPaper/stuid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ExamPaper/ifanswer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ExamPaper/score"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//ExamPaper/ifcorrect"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lab2.ecore#//ExamPaper/submit"/>
+    </genClasses>
+    <genClasses ecoreClass="lab2.ecore#//SubmitedPaper">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//SubmitedPaper/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//SubmitedPaper/stuid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//SubmitedPaper/teaid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//SubmitedPaper/courseid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//SubmitedPaper/ifcorrect"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lab2.ecore#//SubmitedPaper/ifanswer"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

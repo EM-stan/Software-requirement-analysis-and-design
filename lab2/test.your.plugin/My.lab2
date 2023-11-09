@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lab2:Class xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:lab2="http://www.rm2pt.com/lab2" id="230601" studentnum="3" grade="six">
+  <teacher id="01" name="Bob" classid="230601" correct="//@student.0/@answer.0/@submit.0 //@student.1/@answer.0/@submit.0 //@student.2/@answer.0/@submit.0">
+    <teaching id="01" name="English" stunum="3" mean="85.0"/>
+    <input id="01" stuid="01" stuname="Alice" totalscore="290.0" rank="1"/>
+    <input id="02" stuid="02" stuname="Susan" totalscore="250.0" rank="3"/>
+    <input id="03" stuid="03" stuname="Eric" totalscore="270.0" rank="2"/>
+  </teacher>
+  <student id="01" name="Alice" classid="230601" have="//@teacher.0/@input.0">
+    <answer id="01" courseid="01" teaid="01" stuid="01" ifanswer="true">
+      <submit id="01" stuid="01" teaid="01" courseid="01" ifanswer="true"/>
+    </answer>
+  </student>
+  <student id="02" name="Susan" classid="230601" have="//@teacher.0/@input.1">
+    <answer id="02" courseid="01" teaid="01" stuid="02" ifcorrect="true">
+      <submit id="02" stuid="02" teaid="01" courseid="01" ifcorrect="true"/>
+    </answer>
+  </student>
+  <student id="03" name="Eric" classid="230601" have="//@teacher.0/@input.2">
+    <answer id="03" courseid="01" teaid="01" stuid="03" ifanswer="true" score="85.0" ifcorrect="true">
+      <submit id="03" stuid="03" teaid="01" courseid="01" ifcorrect="true" ifanswer="true"/>
+    </answer>
+  </student>
+</lab2:Class>
