@@ -1,0 +1,158 @@
+MicroServiceModel Lab1 {
+	MicroService CustomerService {
+		ProvidedInterface orderPayment{
+			[Operation]
+			orderPayment
+		}
+		ProvidedInterface applyRefund{
+			[Operation]
+			applyRefund
+		}
+		ProvidedInterface manageCart{
+			[Operation]
+			createCart
+			queryCart
+			updateCart
+			modifyCart
+		}
+		ProvidedInterface searchGoods{
+			[Operation]
+			searchGoods
+		}
+		ProvidedInterface login{
+			[Operation]
+			login
+		}
+		ProvidedInterface register{
+			[Operation]
+			register
+		}
+		ProvidedInterface manageOrders{
+			[Operation]
+			createOrders
+			queryOrders
+			updateOrders
+			modifyOrders
+		}
+		ProvidedInterface manageGoods{
+			[Operation]
+			createGoods
+			queryGoods
+			updateGoods
+			modifyGoods
+		}
+		RequiredInterface manageUser
+		RequiredInterface manageCustomer
+		RequiredInterface manageShoppingCart
+		DomainModel CustomerService {
+			@AutoCRUD Entity Orders {
+				OrderId : String
+				GoodsId : String
+				GoodsName : String
+				GoodsPrice : String
+				TotalPrice : String
+				UserId : String
+				OrderAffair : Integer
+				[Refer]
+				OrdersHasGoods : Goods  Association
+			}
+			@AutoCRUD Entity Commodity {
+				ModifyPrice : Integer
+				ComAffair : Integer
+				Attribute3 : String }
+			 Entity Goods {
+				GoodsId : String
+				GoodsName : String
+				GoodsNum : String
+				GoodsPrice : String
+				[Refer]
+				GoodsInOrders : Orders  Aggregation
+			}
+		}
+	}
+	MicroService AdminService {
+		ProvidedInterface manageCommodity{
+			[Operation]
+			createCommodity
+			queryCommodity
+			updateCommodity
+			modifyCommodity
+		}
+		ProvidedInterface manageRefund{
+			[Operation]
+			createRefund
+			queryRefund
+			updateRefund
+			modifyRefund
+		}
+		ProvidedInterface mabageOrders{
+			[Operation]
+			mabageOrders
+		}
+		ProvidedInterface manageShoppingCart{
+			[Operation]
+			createShoppingCart
+			queryShoppingCart
+			updateShoppingCart
+			modifyShoppingCart
+		}
+		RequiredInterface manageOrders
+		RequiredInterface manageGoods
+		DomainModel AdminService {
+			 Entity Payment {
+				IfPay : Boolean
+				IfRefund : Boolean
+				[Refer]
+			}
+			@AutoCRUD Entity ShoppingCart {
+				GoodsId : String
+				GoodsName : String
+				GoodsNum : String
+				GoodsPrice : String
+				CartAffair : Integer
+				UserId : Integer
+				TotalPrice : String
+				[Refer]
+			}
+			@AutoCRUD Entity Admin {
+				PlaceOrderNum : Integer
+				[Refer]
+			}
+		}
+	}
+	MicroService Super_adminService {
+		ProvidedInterface manageUser{
+			[Operation]
+			createUser
+			queryUser
+			updateUser
+			modifyUser
+		}
+		ProvidedInterface manageCustomer{
+			[Operation]
+			createCustomer
+			queryCustomer
+			updateCustomer
+			modifyCustomer
+		}
+		RequiredInterface manageOrders
+		DomainModel Super_adminService {
+			@AutoCRUD Entity User {
+				UserId : String
+				UserName : String
+				Password : String
+				UserStatus : Integer
+				Identity : String
+				[Refer]
+			}
+			@AutoCRUD Entity Customer {
+				OrderNum : Integer
+				[Refer]
+			}
+			@AutoCRUD Entity SuperAdmin {
+				Introduce : String
+				[Refer]
+			}
+		}
+	}
+}
