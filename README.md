@@ -18,7 +18,7 @@ UML建模结果如下：
 概念类图中类有9个  
 顺序图有8个，操作总数有17个，系统合约数量有17个  
 需求化原型结果如下：  
-![image](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/256c0f41-6c97-4d30-8ff9-1d72a9e203a1)
+![image](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/256c0f41-6c97-4d30-8ff9-1d72a9e203a1)  
 架构设计：  
 ![类图](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/1a5baa73-7233-4035-ae1e-7d1919fe96e1)  
 ![微服务架构](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/a290c8ec-901a-474a-8ac8-5240cf256fb6)  
