@@ -1,0 +1,21 @@
+module lab4;
+-- @path activitydiagram=/lab4/activitydiagram.ecore
+-- @path statediagram=/lab4/statediagram.ecore
+create OUT: statediagram from IN: activitydiagram;
+
+rule Activity2State1 {
+	from
+		s: activitydiagram!Activity
+	to
+		t: statediagram!State (
+			outputobject <- s.outputobject
+		)
+}
+rule Activity2State2 {
+	from
+		s: activitydiagram!Controlflow 
+	to
+		t: statediagram!Transform (
+			inputobject <- s.inputobject
+		)
+}
