@@ -24,8 +24,8 @@ UML建模结果如下：
 ![类图](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/1a5baa73-7233-4035-ae1e-7d1919fe96e1)  
 ![用例图](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/693f69ef-78d5-411a-872a-1448b7bbf869)  
 ![微服务架构](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/a290c8ec-901a-474a-8ac8-5240cf256fb6)  
-  
-  
+    
+    
 实验二实验报告：  
 该系统是基于UML模型的学生成绩管理系统进行领域建模  
 元模型截图如下：  
@@ -33,6 +33,16 @@ UML建模结果如下：
 插件测试截图如下：  
 ![task4_1](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/2d60b263-6be6-4abd-936b-97484b3e0f5f) 
 ![task4_2](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/ca374cc6-29ae-4a55-8d77-5a1e14722ca6)  
+  
+  
+实验四实验报告：
+模型转换的插件即ATL,建立了状态图和活动图的元模型，将活动图中的活动和控制流转换成状态图中的状态和状态转换，实现了活动图——>状态图的简单转换。  
+模型转换的结果如下图： 
+原来的模型：  ![lab4_result_1](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/492be58a-7434-414e-813c-5a6c6a5fa50c)  
+转换后的模型：  ![lab4_result_2](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/564788f9-f9f9-41fa-92ef-65be7b585c79)
+代码生成的插件是Acceleo,选择了UML中的类图对其进行转换，部分代码结果如下：  
+![Uploading 代码转换图1.png…]()  
+![Uploading 代码转换图2.png…]()  
 
 
 
