@@ -37,12 +37,13 @@ UML建模结果如下：
   
 实验四实验报告：
 模型转换的插件即ATL,建立了状态图和活动图的元模型，将活动图中的活动和控制流转换成状态图中的状态和状态转换，实现了活动图——>状态图的简单转换。  
-模型转换的结果如下图： 
+模型转换的结果如下图：  
 原来的模型：  ![lab4_result_1](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/492be58a-7434-414e-813c-5a6c6a5fa50c)  
 转换后的模型：  ![lab4_result_2](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/564788f9-f9f9-41fa-92ef-65be7b585c79)
 代码生成的插件是Acceleo,选择了UML中的类图对其进行转换，部分代码结果如下：  
-![Uploading 代码转换图1.png…]()  
-![Uploading 代码转换图2.png…]()  
+![代码转换图1](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/7f0f90dc-5363-4645-82cb-d4430d8224f8)  
+![代码转换图2](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/29857571-199a-4019-8623-0df01fae859e)  
+
 
 
 
