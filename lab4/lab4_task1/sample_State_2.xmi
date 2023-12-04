@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:statediagram="http://www.rm2pt.com/statediagram">
+  <statediagram:State name="borrow book" acitives="borrow book" inputobject="succ" outputobject="exit">
+    <input inputobject="succ"/>
+  </statediagram:State>
+  <statediagram:Transform inputobject="log" outputobject="borrow book">
+    <output outputobject="borrow book"/>
+  </statediagram:Transform>
+</xmi:XMI>
