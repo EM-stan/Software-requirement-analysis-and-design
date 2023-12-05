@@ -27,7 +27,7 @@ UML建模结果如下：
     
     
 实验二实验报告：  
-该系统是基于UML模型的学生成绩管理系统进行领域建模  
+该系统是基于班级课程进行领域建模  
 元模型截图如下：  
  ![image](https://github.com/EM-stan/Software-requirement-analysis-and-design/assets/56598330/25a73460-8ee1-488f-aada-295227d7ed49)  
 插件测试截图如下：  
